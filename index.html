@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Authentication System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="logo">AuthenTech</h1>
+    </header>
+    <main>
+        <section id="software-description">
+            <h2>Software Description</h2>
+            <p>Our innovative product authentication system leverages advanced AI, machine learning, and neural networks to ensure the authenticity of products, initially focusing on footwear. The system distinguishes genuine products from counterfeits through image capture and live analysis, ensuring consumer trust and brand integrity. Additionally, it includes a vendor reliability assessment tool that evaluates vendors based on sales history, past performance, and product evaluations.</p>
+        </section>
+        <section id="image-capture">
+            <h2>Image Capture</h2>
+            <div class="input-box">
+                <label for="original-product">Original Sample Product:</label>
+                <input type="file" accept="image/*" id="original-product-input">
+            </div>
+            <div class="input-box">
+                <label for="received-product">Product Received in Image Capture:</label>
+              <input type="file" accept="image/*" id="original-product-input" class="file-input">
+            </div>
+            <button id="compare-images-btn">Compare Images</button>
+        </section>
+        <section id="verification">
+            <h2>Verification Result</h2>
+            <p id="verification-result">Please capture and compare images</p>
+        </section>
+        <section id="user-type">
+            <h2>User Type</h2>
+            <button id="customer-btn">Customer</button>
+            <button id="retailer-btn">Retailer</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Product Authentication System</p>
+        <div class="auth-buttons">
+            <button id="login-btn">Login</button>
+            <button id="signup-btn">Sign Up</button>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
